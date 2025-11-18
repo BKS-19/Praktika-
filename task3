@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	const PI = 3.14159
+	var r float64 = 5
+
+	area := PI * r * r
+	fmt.Println("Area", area)
+	main2()
+}
+
+func main2() {
+	const PI = 3.14159
+	var r float64
+
+	fmt.Scan(&r)
+
+	area := PI * r * r
+	fmt.Printf("Площадь круга: %.3f\n", area)
+
+}
