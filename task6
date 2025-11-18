@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var n int
+	fmt.Scan(&n)
+	if n%2 == 0 {
+		if n == 0 {
+			fmt.Println("Zero")
+		} else if n > 0 {
+			fmt.Println("Positive even")
+		} else {
+			fmt.Println("Negative even")
+		}
+	} else {
+		if n > 0 {
+			fmt.Println("Positive odd")
+		} else {
+			fmt.Println("Negative odd")
+		}
+
+	}
+}
